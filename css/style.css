@@ -1,0 +1,164 @@
+/* ============================================
+   PORTAFOLIO — Anyi Natalia Cárdenas
+   style.css
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== CUERPO ===== */
+body {
+    background: #845fd5;
+    font-family: 'Noto Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== SECCIÓN TARJETA ===== */
+section {
+    width: 90%;
+    max-width: 1000px;
+    border: 1px solid #ffff;
+    margin: 50px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* ===== FILA: FOTO + INFO ===== */
+#fila {
+    width: 100%;
+    display: flex;
+    min-height: 500px;
+}
+
+/* ===== FOTO ===== */
+#foto {
+    width: 45%;
+    flex-shrink: 0;
+}
+
+#foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+/* ===== INFO ===== */
+#info {
+    width: 55%;
+    padding: 36px 36px 36px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Subtítulo — DESARROLLADOR WEB */
+#info h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 22px;
+    color: #00e5ff;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+/* Nombre principal */
+#info h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 1px;
+}
+
+/* Línea decorativa debajo del nombre */
+#detalle {
+    width: 100%;
+    height: 2px;
+    background-color: #00e5ff;
+    border-radius: 2px;
+}
+
+/* Descripción */
+#info p {
+    font-size: 14px;
+    color: #e0e0e0;
+    line-height: 1.75;
+}
+
+/* ===== LISTA DE DATOS ===== */
+article {
+    border: 1.5px solid #00e5ff;
+    border-radius: 8px;
+    padding: 16px 20px;
+    background-color: rgba(0, 229, 255, 0.05);
+}
+
+article ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+}
+
+article ul li {
+    font-size: 14px;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+article ul li strong {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+/* ===== REDES SOCIALES ===== */
+#redes {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-top: 4px;
+}
+
+#redes a {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    transition: transform .3s, opacity .3s;
+}
+
+#redes a:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+}
+
+/* Facebook — azul */
+#redes a:nth-child(1) {
+    background-color: #1877f2;
+}
+
+/* Instagram — degradado */
+#redes a:nth-child(2) {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
